@@ -1,0 +1,16 @@
+{
+  "status": 0,
+  "result": {
+    "createdById": "0052w0000070X3rAAE",
+    "createdByName": "Satya Sekhar Chegondi",
+    "createdDate": "1970-01-01T00:00:00.000Z",
+    "fileName": "customMetadata/Customer_Fields.Contact.md",
+    "fullName": "Customer_Fields.Contact",
+    "id": "m002w000002uSQdAAM",
+    "lastModifiedById": "0052w0000070X3rAAE",
+    "lastModifiedByName": "Satya Sekhar Chegondi",
+    "lastModifiedDate": "1970-01-01T00:00:00.000Z",
+    "manageableState": "unmanaged",
+    "type": "CustomMetadata"
+  }
+}

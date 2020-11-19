@@ -1,0 +1,16 @@
+{
+  "status": 0,
+  "result": {
+    "createdById": "0052y000001kqKwAAI",
+    "createdByName": "Satya Sekhar Chegondi",
+    "createdDate": "2020-11-18T12:07:15.000Z",
+    "fileName": "notificationtypes/New_Contact.notiftype",
+    "fullName": "New_Contact",
+    "id": "0ML2y00000000ALGAY",
+    "lastModifiedById": "0052y000001kqKwAAI",
+    "lastModifiedByName": "Satya Sekhar Chegondi",
+    "lastModifiedDate": "2020-11-18T12:07:15.000Z",
+    "manageableState": "unmanaged",
+    "type": "CustomNotificationType"
+  }
+}

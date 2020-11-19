@@ -1,0 +1,31 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0052y000001kqKwAAI",
+      "createdByName": "Satya Sekhar Chegondi",
+      "createdDate": "1970-01-01T00:00:00.000Z",
+      "fileName": "customMetadata/Customer_Fields.Lead.md",
+      "fullName": "Customer_Fields.Lead",
+      "id": "m002y0000006Gm0AAE",
+      "lastModifiedById": "0052y000001kqKwAAI",
+      "lastModifiedByName": "Satya Sekhar Chegondi",
+      "lastModifiedDate": "1970-01-01T00:00:00.000Z",
+      "manageableState": "unmanaged",
+      "type": "CustomMetadata"
+    },
+    {
+      "createdById": "0052y000001kqKwAAI",
+      "createdByName": "Satya Sekhar Chegondi",
+      "createdDate": "1970-01-01T00:00:00.000Z",
+      "fileName": "customMetadata/Customer_Fields.Contact.md",
+      "fullName": "Customer_Fields.Contact",
+      "id": "m002y0000006EkeAAE",
+      "lastModifiedById": "0052y000001kqKwAAI",
+      "lastModifiedByName": "Satya Sekhar Chegondi",
+      "lastModifiedDate": "1970-01-01T00:00:00.000Z",
+      "manageableState": "unmanaged",
+      "type": "CustomMetadata"
+    }
+  ]
+}

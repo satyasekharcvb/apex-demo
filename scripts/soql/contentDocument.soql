@@ -1,0 +1,8 @@
+// Use .soql files to store SOQL queries.
+// You can execute queries in VS Code by selecting the
+//     query text and running the command:
+//     SFDX: Execute SOQL Query with Currently Selected Text
+
+//Use the Document Id from the Org to check
+SELECT Id, LatestPublishedVersionId FROM ContentDocument WHERE Id='0692y000002SULUAA4'
+SELECT Id, VersionData FROM ContentVersion WHERE Id='0682y000002lvOEAAY'

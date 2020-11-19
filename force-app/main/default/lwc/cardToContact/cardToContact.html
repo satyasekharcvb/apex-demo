@@ -1,0 +1,19 @@
+<template>
+    <lightning-card  title="Hello" icon-name="standard:people">
+        <lightning-combobox
+                name="sobject-type"
+                label="Select Record Type"
+                value={sobject}
+                placeholder="Select Object"
+                options={options}
+                onchange={handleObjectChange} ></lightning-combobox>
+
+        <lightning-file-upload
+                label="Upload Visiting Card"
+                name="fileUploader"
+                accept={acceptedFormats}
+                onuploadfinished={handleUploadFinished}
+                multiple>
+        </lightning-file-upload>
+    </lightning-card>
+</template>

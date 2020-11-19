@@ -1,0 +1,14 @@
+// Use .soql files to store SOQL queries.
+// You can execute queries in VS Code by selecting the
+//     query text and running the command:
+//     SFDX: Execute SOQL Query with Currently Selected Text
+
+    SELECT
+    First_Name__r.QualifiedAPIName,
+    Last_Name__r.QualifiedAPIName,
+    Phone__r.QualifiedAPIName,
+    Email__r.QualifiedAPIName,
+    Org__r.QualifiedAPIName
+    FROM Customer_Fields__mdt
+    WHERE Object_Name__r.QualifiedAPIName = 'Lead'
+    LIMIT 1
