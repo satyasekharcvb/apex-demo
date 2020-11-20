@@ -1,6 +1,6 @@
 import { LightningElement, api } from 'lwc';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
-import createRecord from '@salesforce/apex/RecordCreationHelper.createRecord'
+import createRecord from '@salesforce/apex/RecordCreationHelper.createRecord';
 
 
 export default class CardToContact extends LightningElement {

@@ -25,13 +25,13 @@ public inherited sharing class RecordCreationHelper {
         
         
         // Call Einstein OCR    
-        Map<String, String> visitingCardInfo = new Map<String, String> ();
+        Map<String, String> businessCardInfo = new Map<String, String> ();
         einsteinplay.Einstein_PredictionService einsteinService = new einsteinplay.Einstein_PredictionService(
             einsteinplay.Einstein_PredictionService.Types.OCR
         );
         einsteinplay.Einstein_PredictionResult response = einsteinService.predictOcrBase64('OCRModel',EncodingUtil.base64encode(cv.VersionData),'CONTACT', 'DTXDEMO');
         for (einsteinplay.Einstein_Probability probability: response.probabilities) {
-            visitingCardInfo.put(probability.attributes.tag, probability.label);
+            businessCardInfo.put(probability.attributes.tag, probability.label);
         }
         
         // Creating a new sObject based on results from Einstein
@@ -42,13 +42,13 @@ public inherited sharing class RecordCreationHelper {
         SObject recordToInsert = targetType.newSObject();
         if(cmdt != null){
             System.debug(cmdt);
-            System.debug(visitingCardInfo);
-            String personName = visitingCardInfo.get('PERSON');
+            System.debug(businessCardInfo);
+            String personName = businessCardInfo.get('PERSON');
             String firstName = personName?.split(' ')[0];
             String lastName = personName?.split(' ')[1];
-            String phone = visitingCardInfo.get('PHONE');
-            String email = visitingCardInfo.get('EMAIL');
-            String org = visitingCardInfo.get('ORG');
+            String phone = businessCardInfo.get('PHONE');
+            String email = businessCardInfo.get('EMAIL');
+            String org = businessCardInfo.get('ORG');
             recordToInsert.put(cmdt.First_Name__r.QualifiedAPIName, firstName?.trim());
             recordToInsert.put(cmdt.Last_Name__r.QualifiedAPIName, lastName?.trim());
             recordToInsert.put(cmdt.Phone__r.QualifiedAPIName,phone);
@@ -71,7 +71,7 @@ public inherited sharing class RecordCreationHelper {
                 obj.setNotificationTypeId(cnt.Id);
                 obj.setTargetId(lstToCreate[0].Id);
                 obj.setTitle('A new record ' + firstName + ' ' + lastName +' has been created');
-                obj.setBody('A new record by scanning a visiting card has been created');
+                obj.setBody('A new record by scanning a business card has been created');
                 obj.send(new Set<String>{UserInfo.getUserId()});
                 
                 return lstToCreate[0].Id;
